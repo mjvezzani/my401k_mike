@@ -7,6 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><%= link_to "Learn About Your Plan", plan_path %></li>
+      <li><%= link_to "Manage Your Account", account_path %></li>
+      <li><%= link_to "View Helpful Resources", resources_path %></li>
+      <li><%= link_to "Enroll in Plan", enroll_path %></li>
+      <li><%= link_to "View Special Offers", special_offers_path %></li>
+    </ul>
+  </nav>
 
 <%= yield %>
 

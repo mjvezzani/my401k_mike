@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  root 'main#index'
+
+  get '/plan' => 'plans#index'
+  get '/account' => 'accounts#index'
+  get '/resources' => 'resources#index'
+  get '/enroll' => 'enroll#index'
+  get '/special_offers' => 'special_offers#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
