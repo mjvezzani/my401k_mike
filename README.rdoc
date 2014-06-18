@@ -4,3 +4,7 @@ ToDo
 
 * Add category model and connect to articles
 * Present articles to consumer facing pages, organized by category.
+
+Know Issues
+
+* Currently, when you submit a new article with invalid fields, the url slug changes from /articles/new to just /articles, but the new form is still present. Don't know why this is.
