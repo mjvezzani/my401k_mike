@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   # Content author pages
   get '/content_author' => 'content_authors#index'
+  resources :articles
  
  
  
