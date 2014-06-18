@@ -1,1 +1,23 @@
 <h4>Write yo'self an article, yo</h4>
+
+<% if @article.errors.any? %>
+  <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @article do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body, rows: 15 %>
+
+  <br/>
+
+  <%= f.submit "Publish Article" %>
+
+<% end %>
