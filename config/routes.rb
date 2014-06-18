@@ -2,12 +2,33 @@ Rails.application.routes.draw do
 
   root 'main#index'
 
+  # Consumer facing pages
   get '/plan' => 'plans#index'
   get '/account' => 'accounts#index'
   get '/resources' => 'resources#index'
   get '/enroll' => 'enroll#index'
   get '/special_offers' => 'special_offers#index'
-  # The priority is based upon order of creation: first created -> highest priority.
+
+  # Content author pages
+  get '/content_author' => 'content_authors#index'
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
